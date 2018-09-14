@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/run.dir/main.cpp.o  -o run -Wl,-rpath,/home/jaken/project/build/src src/libbonjour.so -lpthread 

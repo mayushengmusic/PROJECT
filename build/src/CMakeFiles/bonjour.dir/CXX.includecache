@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/../include/bonjour.hpp
+iostream
+-
+string
+-
+thread
+-
+
+/home/jaken/project/src/bonjour.cpp
+bonjour.hpp
+/home/jaken/project/src/bonjour.hpp
+

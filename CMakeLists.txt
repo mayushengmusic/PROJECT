@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.12)
+PROJECT(RUN)
+SET(CXX clang++)
+aux_source_directory(. SRC)
+MESSAGE(STATUS "This is BINARY dir" ${RUN_BINARY_DIR})
+MESSAGE(STATUS "This is SOURCE dir" ${RUN_SOURCE_DIR})
+add_subdirectory(src)
+ADD_EXECUTABLE(run ${SRC})
+target_link_libraries(run bonjour pthread)
+INCLUDE_DIRECTORIES(include)
+
